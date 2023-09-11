@@ -526,6 +526,8 @@ img {
   }
   .home__img {
     width: 200px;
+    display:absolute;
+    top: 70px;
   }
   #preloader{
     background:#000 url('img/WMDx.gif') no-repeat center center; background-size: 10%;  height: 100%;
@@ -667,7 +669,13 @@ img {
 
 @media (max-width:576px){
   .home__img{
-   display: none;
+    width: 230px;
+    display:absolute;
+    top: 60px;
+    right: 18%;
+  }
+  .home__data{
+    margin-top: 300px;
   }
   .home__title{
     font-size: 50px;
