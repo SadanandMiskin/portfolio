@@ -692,8 +692,11 @@ img {
     margin-top:220px;
   }
   .button{
-    position: absolute;
-    left: 21px;
+    
+    left: 121px;
+    /* bottom: 10px; */
+    /* top: -10px; */
+    margin-top: -24px;
     
   }
   
