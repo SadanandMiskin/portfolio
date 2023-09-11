@@ -3,23 +3,84 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <title>Sadanand Miskin</title>
+        <style>
+            .row{
+    display: flex;
+    flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  }
+
+            .swiper {
+        width: 320px;
+        height: 224px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        background-size: auto;
+        border: #000 solid;
+        
+      }
+
+      .swiper-slide:nth-child(1n) {
+        background-color: rgb(255, 255, 255);
+      }
+
+      .swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+      }
+
+      .swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+      }
+
+      .swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+      }
+
+      .swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+      }
+
+      .swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+      }
+      .img1 {
+    max-width: 20%;
+    margin-top: -29px;
+    margin-bottom: -25px;
+}
+     
+    </style>
+        </style>
     </head>
     <body>
         <div id="preloader" style="background:#000 url('img/WMDx.gif') no-repeat center center; background-size: 9%;  height: 100%;
         width: 100%;
         position: fixed;
-        z-index: 100;"></div>
+        z-index: 100;"><h3>Please wait....</h3></div>
 
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="/" class="nav__logo">Sadanand</a>
+                    <a href="/" class="nav__logo">Sadanand Miskin</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -27,7 +88,9 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#edu" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -41,9 +104,13 @@
         <main class="l-main">
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sadanand </span><br> Web developer</h1>
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sadanand Miskin</span><br>  
+                        <span
+                        class="txt-rotate"
+                        data-period="1000"
+                        data-rotate='["Web Dev","I write code", "Learning New Tech","Currently Working"]'></span></h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="/assets/resume/SadanandMiskin.docx" class="button" download>Download CV <i class="fa-solid fa-angles-down" style="color: #ffffff;"></i></a>
                 </div>
 
                 <div class="home__social">
@@ -51,13 +118,13 @@
                     <a href="https://github.com/SadanandMiskin" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <div class="home__img" >
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
                         <mask id="mask0" mask-type="alpha">
                             <path d="M9.19024 145.964C34.0253 66.5814 114.865 54.7299 184.111 29.4423C245.804 6.98884 311.86 -14.9103 370.735 14.143C431.207 44.026 167.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                         </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 125.964C34.0253 66.581494.865 44.7299 184.111 23.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 267.948 107.508 427.191 154.311C485.897 237.229 44.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 19.19024 125.964Z"/>
+                        <g mask="url(#mask0)" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                            <path d="M9.19024 75.964C34.0253 66.581494.865 44.7299 184.111 23.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 267.948 107.508 427.191 154.311C485.897 237.229 44.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 169.81 -17.1617 89.583 10.19024 95.964Z"/>
                             <image class="home__blob-img" x="30" y="0" href="img/profile.png"/>
                         </g>
                     </svg>
@@ -70,11 +137,11 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="img/about.jpeg" alt="">
+                        <img src="img/XOsX.gif" alt="">
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Sadanand</h2>
+                        <h2 class="about__subtitle">I'am Sadanand Miskin</h2>
                         <p class="about__text">I make websites. I'm good with things like HTML, CSS, and JavaScript, which make sites look and work well. I also know how to make the behind-the-scenes stuff work using Node.js, Express, and MongoDB. Check out my portfolio to see all the cool websites I've made!</p>           
                     </div>                                   
                 </div>
@@ -120,15 +187,49 @@
                     </div>
                     
                     <div>              
-                        <img src="img/work3.jpg" alt="" class="skills__img">
+                        <img src="img/NZzo.gif" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
+            <section id="education" class="py-5" id="edu">
+                <div class="container">
+                    <h2 class="section-title" id="projects">Education</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4"  style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #940388;"></i><b> Schooling</b></h5>
+                                    <h6 class="card-title" style="background-color: #910591; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">2018</h6>
+                                    <p class="card-text">Completed my 10th from SRN Mehta School</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #c108b1;"></i><b> Higher School</b></h5>
+                                    <h6 class="card-title" style="background-color: #88079c; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">2020</h6>
+                                    <p class="card-text">Completed my 12th from Gurukul independent PU College of Science</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #aa069c;"></i><b> Currenty</b></h5>
+                                    <h6 class="card-title" style="background-color: #9008a2; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">2020</h6>
+                                    <p class="card-text">Studying Information Science (ISE) in Nitte Meenakshi Institute of Technology </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section class="skills section " id="about">
                 <h2 class="section-title" id="projects">Projects</h2>
-
+                    
                 <div class="container">
                     <div class="team-grid">
                         <div class="container">
@@ -158,7 +259,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h4 style="margin-left: 60px;">Kum Kum</h4>
+                                    <h4 style="margin-left: 60px;">Kum-Kum Beauty Parlour</h4>
                                 </div>
                                 <div class="col-md-4 col-lg-3 item">
                                     <div class="box" style="background-image:url('img/wea.avif')">
@@ -173,18 +274,65 @@
                                     </div>
                                     <h4 style="margin-left: 60px;">WeatherAPI</h4>
                                 </div>
-                                <div class="col-md-4 col-lg-3 item" style="width: 100%;">
-                                    <h4 style="margin-left: 60px;">Still Working.....</h4>
-                                        
-                                    </div>
-                                    
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="team-grid" style="margin-top: -90px;">
+                        <div class="container">
+                            <div class="row people">
+                                
+                                <div class="col-md-4 col-lg-3 item">
+                                    <div class="box" style="background-image:url('img/i.png')">
+                                        <div class="cover">
+                                            <h3 class="name" >Event Page</h3>
+                                            <p class="title"><b style="color: coral;">An Event Landing page.</p>
+                                            <div class="social">
+                                                <a href="https://samdd1.github.io/"><button style="background-color: white;" >Live link</button></a>
+                                             <a href="https://github.com/samdd1/samdd1.github.io/"><button style="background-color: white; "  >Github</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 style="margin-left: 60px;">EventSee</h4>
+                                </div>
+
+
+                                <div class="col-md-4 col-lg-3 item" style="min-width: 270px; border-radius: 300px;">
+                                    <div class="box" style="background-image:url('img/working.gif')">
+                                        <div class="cover">
+                                            <h3 class="name" >-------</h3>
+                                            <p class="title"><b style="color: coral;">Currenty working on projects</p>
+                                                
+                                           
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
-            
+            <section class="contact section" id="certificates" style="margin-top: -80px; margin-bottom: 30px;">
+                <h2 class="section-title">Certificates</h2>
+                <div class="swiper mySwiper">
+                    <center>
+                      <div class="img1"><img src="img/giphy.gif" alt="" > </div> 
+                    </center>
+                    <div class="swiper-wrapper" >
+                      <div class="swiper-slide" ><img src="certificates/meta1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="certificates/freecode.png" alt=""></div>
+                      <div class="swiper-slide"><img src="certificates/nptel.png" alt=""></div>
+                      <div class="swiper-slide"><img src="certificates/meta2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="certificates/flipkart.png" alt=""></div>
+                      <div class="swiper-slide"><img src="certificates/hackerrank.png" alt=""></div>
+                    </div>
+                  </div>
+            </section>
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact__container bd-grid">
@@ -205,20 +353,84 @@
           
             
         </footer>
-
-
+        
+        <script src="https://kit.fontawesome.com/a92e035de8.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!DOCTYPE html>
        <script>
             var loader = document.getElementById('preloader')
             $(window).on("load",function(){
-     $("#preloader").delay(1200).fadeOut("slow");
+     $("#preloader").delay(800).fadeOut("slow");
 });
+
+var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+
+    
+
+      var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 1000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 120 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
         </script>
     </body>
 </html>
