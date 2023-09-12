@@ -672,9 +672,9 @@ img {
 @media (max-width:576px){
  
   .home__img{
-    width: 230px;
-    display:absolute;
-    top: 60px;
+    width: 240px;
+    display: absolute;
+    top: 92px;
     right: 18%;
   }
   .home__data{
@@ -684,7 +684,7 @@ img {
     font-size: 50px;
     margin-bottom: 19px;
     margin-left: -26px;
-    margin-top: 210px;
+    margin-top: 328px;
   }
   .home__data{
     position: absolute;
@@ -692,13 +692,16 @@ img {
     
   }
   .about{
-    margin-top:220px;
+    margin-top:306px;
   }
   .button{
-    position: absolute;
-    left: 169px;
-    margin-top: -25px;
+        position: absolute;
+    left: 20px;
+    margin-top: 31px;
     
+  }
+  .wr{
+    margin-left: -26px;
   }
   
   #preloader{
