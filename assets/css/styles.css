@@ -679,6 +679,18 @@ img {
     top: 92px;
     right: 13%;
   }
+  .nn{
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+    position: absolute;
+    left: 130px;
+    margin-top: -25px;
+    
+  }
   .home__data{
     margin-top: 300px;
   }
