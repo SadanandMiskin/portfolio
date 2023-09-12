@@ -172,6 +172,7 @@ img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 /*Active menu*/
@@ -613,6 +614,7 @@ img {
   }
   .nav__toggle {
     display: none;
+    
   }
   .nav__link {
     color: var(--second-color);
@@ -668,6 +670,7 @@ img {
 }
 
 @media (max-width:576px){
+ 
   .home__img{
     width: 230px;
     display:absolute;
@@ -693,8 +696,8 @@ img {
   }
   .button{
     position: absolute;
-    left: 21px;
-    
+    left: 169px;
+    margin-top: -25px;
     
   }
   
