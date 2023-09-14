@@ -109,13 +109,13 @@
                     <h6 class="home__title"></h6>
                     <h1 class="home__title" style=""><span style="color: #707070;">Hi, I'm</span><br> <span class="home__title-color"><b>Sadanand Miskin,</b></span></h1><br>  
                      <h6 style="margin-top: -40px; color: #848282;" class="wr">
-                        <span
-                        class="txt-rotate"
-                        data-period="1000"
-                        data-rotate='["I`m a Web Dev.","I write code...", "Learning New Tech.","Currently Working on Cool Stuff."]'></span>
+                        <span style="    display: inline-flex;
+                        align-items: baseline;">
+                           <p>Right Now, I'm </p> <p id="status" style="padding-left: 5px;"></p>
+                        </span>
                      </h6>
                             
-                    <a href="resume/SadanandMiskin.pdf" class="button bbb" style="margin-top: 30px; " download>Download CV <i class="fa-solid fa-angles-down" style="color: #ffffff;"></i></a><br>
+                    <a href="resume/SadanandMiskin.pdf" class="button bbb" style="margin-top: 20px; " download>Download CV <i class="fa-solid fa-angles-down" style="color: #ffffff;"></i></a><br>
                     <p class="hh6" style="color: #a1a1a1; margin-top: 40px;
                     margin-bottom: 1rem;
                     margin-left: 15px;"></p>
@@ -381,6 +381,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       
        <script>
             var loader = document.getElementById('preloader')
             $(window).on("load",function(){
@@ -393,47 +394,36 @@ var swiper = new Swiper(".mySwiper", {
       });
 
     
+      function updateStatus() {
+            const statusElement = document.getElementById('status');
+            const now = new Date();
+            const currentHour = now.getHours();
 
-      var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 1000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 120 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
+            if (currentHour >= 13 && currentHour < 23) {
+                statusElement.innerText = 'Online';
+                statusElement.style.color = "green"
+                statusElement.style.fontWeight ="bold"
+                setTimeout(() => {
+                    statusElement.innerText = 'Updating...';
+                    setTimeout(() => {
+                        statusElement.innerText = 'Online';
+                    }, 500); 
+                }, 2500); 
+            } else {
+                statusElement.innerText = 'Offline';
+                statusElement.style = "red"
+                statusElement.style.fontWeight ="bold"
+                setTimeout(() => {
+                    statusElement.innerText = 'Updating...';
+                    setTimeout(() => {
+                        statusElement.innerText = 'Online';
+                    }, 500); 
+                }, 2500)
+            }
+        }
+        updateStatus();
+        setInterval(updateStatus, 4000);
+      
 
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
