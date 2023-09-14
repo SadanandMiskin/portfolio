@@ -410,12 +410,12 @@ var swiper = new Swiper(".mySwiper", {
                 }, 2500); 
             } else {
                 statusElement.innerText = 'Offline';
-                statusElement.style = "red"
+                statusElement.style.color = "red"
                 statusElement.style.fontWeight ="bold"
                 setTimeout(() => {
                     statusElement.innerText = 'Updating...';
                     setTimeout(() => {
-                        statusElement.innerText = 'Online';
+                        statusElement.innerText = 'Offline';
                     }, 500); 
                 }, 2500)
             }
