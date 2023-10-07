@@ -32,6 +32,28 @@
   animation: shadow-glow 3s infinite;
 }
 
+.anim-box {
+  background-color: purple;
+  width: 200px; /* Adjust width if needed */
+  height: 200px; /* Adjust height if needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center center; /* Set the center point as the rotation point */
+  animation: rotate 2s linear infinite;
+  z-index: -1; /* Place the anim-box behind the image */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg); /* Complete the full rotation at 100% of the animation */
+}
+}
+
+
 @keyframes shadow-glow {
   0% {
     box-shadow: 0px -1px 30px 6px rgb(242, 0, 255);
@@ -291,12 +313,12 @@ img {
 
 .home__blob {
   fill: var(--first-color);
-  max-width: 370px;
+  max-width: 394px;
 }
 
 .home__blob-img {
-  width: 460px;
-  height: 500px;
+  width: 439px;
+  height: 478px;
 }
 
 /*BUTTONS*/
@@ -731,8 +753,8 @@ img {
   .home__img{
     width: 240px;
     display: absolute;
-    top: 92px;
-    right: 13%;
+    top: 60px;
+    right: 19%;
   }
   .nn{
   background-color: var(--first-color);
@@ -757,7 +779,7 @@ img {
   }
   .home__data{
     position: absolute;
-    left: 70px;
+    left: 87px;
     
   }
   .about{
