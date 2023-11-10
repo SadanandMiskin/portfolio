@@ -5,7 +5,7 @@ const ejs = require('ejs')
 const path = require('path')
 const app = express()
 var port = process.env.PORT
-const dbConnect = require('./config/mongo')
+ require('./config/mongo')
 const Message = require('./models/message')
 
 app.set('view engine','ejs')

@@ -9,7 +9,7 @@
   /* HSL color mode */
   --hue-color: 224;
   --first-color: rgb(132, 4, 155);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --second-color: rgb(191, 0, 255);
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -26,10 +26,10 @@
   --z-fixed: 100;
 }
 
+
+
 .bbb{
-  -webkit-animation: shadow-glow 3s infinite;
-  -moz-animation: shadow-glow 3s infinite;
-  animation: shadow-glow 3s infinite;
+  box-shadow: 0px 1px 30px 6px rgb(3, 165, 193);
 }
 
 .anim-box {
@@ -53,54 +53,6 @@
 }
 }
 
-
-@keyframes shadow-glow {
-  0% {
-    box-shadow: 0px -1px 30px 6px rgb(242, 0, 255);
-  }
-  50% {
-    box-shadow: 0px 1px 30px 6px rgb(193, 3, 193);
-  }
-  100% {
-    box-shadow: 0px -1px 30px 6px rgb(30, 27, 27);
-  }
-}
-
-@-webkit-keyframes shadow-glow {
-  0% {
-    box-shadow: 0px -1px 30px 6px rgb(0, 239, 252);
-  }
-  50% {
-    box-shadow: 0px 1px 30px 6px rgb(0, 199, 254);
-  }
-  100% {
-    box-shadow: 0px -1px 30px 6px red;
-  }
-}
-
-@-moz-keyframes shadow-glow {
-  0% {
-    box-shadow: 0px -1px 30px 6px rgb(9, 147, 252);
-  }
-  50% {
-    box-shadow: 0px 1px 30px 6px rgb(0, 251, 255);
-  }
-  100% {
-    box-shadow: 0px -1px 30px 6px rgb(234, 0, 255);
-  }
-}
-
-@keyframes shadow-glow {
-  0% {
-    box-shadow: 0px -1px 30px 6px rgb(255, 0, 255);
-  }
-  50% {
-    box-shadow: 0px 1px 30px 6px rgb(102, 0, 169);
-  }
-  100% {
-    box-shadow: 0px -1px 30px 6px rgb(255, 3, 255);
-  }
-}
 
 
 @media screen and (min-width: 968px) {
@@ -378,7 +330,7 @@ img {
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+ box-shadow: 0px 4px 25px rgb(236 231 11 / 18%);
 }
 
 .skills__icon {

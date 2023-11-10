@@ -77,20 +77,95 @@ a:hover{
     color: rgb(0, 222, 41);
     text-decoration: none;
 }
-     
+.blur-circle {
+            width: 899px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: rgb(93, 64, 122);
+            filter: blur(390px);
+            opacity: .3;
+            position: absolute;
+            left: 23.1%;
+            top: -30%;
+
+
+        }
+     .card-body{
+        color: white;
+        background-color: #000;
+        box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;
+     }
+
+     .col-md-4 {
+        box-shadow: rgba(7, 196, 225, 0.25)0px 50px 100px -20px, rgba(14, 172, 220, 0.3) 0px 30px 60px -30px;
+     }
     </style>
         </style>
     </head>
-    <body>
-        <!-- <div id="preloader" style="background:#000 url('img/WMDx.gif') no-repeat center center; background-size: 9%;  height: 100%;
+    <body style="background-color: #000;">
+        <div class="blur-circle"></div>
+        <div class="blur-circle"
+        style="
+        width: 899px;
+  height: 500px;
+  border-radius: 117%;
+  background-color: white;
+  filter: blur(498px);
+  opacity: 0.1;
+  position: absolute;
+  left: 23%;
+  top: 90%;
+        "
+        ></div>
+        <div class="blur-circle"
+        style="
+        width: 899px;
+  height: 500px;
+  border-radius: 117%;
+  background-color: white;
+  filter: blur(498px);
+  opacity: 0.1;
+  position: absolute;
+  left: 23%;
+  top: 157%;
+        "
+        ></div>
+        <div class="blur-circle"
+        style="
+        width: 899px;
+  height: 500px;
+  border-radius: 117%;
+  background-color: white;
+  filter: blur(498px);
+  opacity: 0.1;
+  position: absolute;
+  left: 23%;
+  top: 249%;
+        "
+        ></div>
+        <div class="blur-circle"
+        style="
+        width: 899px;
+  height: 500px;
+  border-radius: 117%;
+  background-color: white;
+  filter: blur(498px);
+  opacity: 0.1;
+  position: absolute;
+  left: 23%;
+  top: 501%;
+        "
+        ></div>
+        
+        <div id="preloader" style="background:#000 url('img/WMDx.gif') no-repeat center center; background-size: 9%;  height: 100%;
         width: 100%;
         position: fixed;
-        z-index: 100;"><h3>Please wait....</h3></div> -->
+        z-index: 100;"><h3>Please wait....</h3></div>
 
-        <header class="l-header">
-            <nav class="nav bd-grid">
+        <header class="l-header" style="background-color: #000; color: white;">
+            <nav class="nav bd-grid" >
                 <div>
-                    <a href="/" class="nav__logo">Sadanand Miskin</a>
+                    <a href="/" class="nav__logo" style="color: #00a2f3;">Sadanand Miskin</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -112,10 +187,13 @@ a:hover{
         </header> 
 
         <main class="l-main">
+            
             <section class="home bd-grid" id="home">
+               
                 <div class="home__data">
+                 
                     <h6 class="home__title"></h6>
-                    <h1 class="home__title" style=""><span style="color: #707070;">Hi, I'm</span><br> <span class="home__title-color"><b>Sadanand Miskin,</b></span></h1><br>  
+                    <h1 class="home__title" style=""><span style="color: #707070;">Hi, I'm</span><br> <span class="home__title-color" style=" color: #c200f39a;"><b>Sadanand Miskin,</b></span></h1><br>  
                      <h6 style="margin-top: -40px; color: #848282;" class="wr">
                         <span style="    display: inline-flex;
                         align-items: baseline;">
@@ -153,25 +231,25 @@ a:hover{
             <section class="about section " id="about">
                 <h2 class="section-title">About</h2>
 
-                <div class="about__container bd-grid">
+                <div class="about__container bd-grid" >
                     <div class="about__img">
-                        <img src="img/XOsX.gif" alt="">
+                        <img src="img/favicon.png" alt="" style="box-shadow: rgba(225, 120, 7, 0.25)0px 50px 100px -20px, rgba(220, 217, 14, 0.3) 0px 30px 60px -30px; padding: 30px;">
                     </div>
                     
-                    <div>
-                        <h2 class="about__subtitle">I'm Sadanand Miskin</h2>
-                        <p class="about__text">I make websites. I'm good with things like HTML, CSS, and JavaScript, which make sites look and work well. I also know how to make the behind-the-scenes stuff work using Node.js, Express, and MongoDB. Check out my portfolio to see all the cool websites I've made!</p>           
+                    <div style="box-shadow: rgba(7, 225, 225, 0.25)0px 50px 100px -20px, rgba(14, 199, 220, 0.3) 0px 30px 60px -30px; padding: 30px; padding: 20px;">
+                        <h2 class="about__subtitle" style="color: white;">I'm <span style="color: #8a00f3;">Sadanand Miskin</span></h2>
+                        <p class="about__text" style="color: white;">I make websites. I'm good with things like HTML, CSS, and JavaScript, which make sites look and work well. I also know how to make the behind-the-scenes stuff work using Node.js, Express, and MongoDB. Check out my portfolio to see all the cool websites I've made!</p>           
                     </div>                                   
                 </div>
             </section>
 
        
-            <section class="skills section" id="skills">
+            <section class="skills section" id="skills" style="color: white;">
                 <h2 class="section-title">Skills</h2>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
+                <div class="skills__container bd-grid" >          
+                    <div style="box-shadow: rgba(134, 7, 225, 0.25)0px 50px 100px -20px, rgba(127, 14, 220, 0.3) 0px 30px 60px -30px; padding: 30px;" >
+                        <h2 class="skills__subtitle" style="color: rgb(255, 0, 225);">Professional Skills</h2>
                         <p class="skills__text">I have a good hold on HTML,CSS and JavaScript for building Interactive websites. </p>
                         <div class="skills__data">
                             <div class="skills__names">
@@ -204,8 +282,8 @@ a:hover{
                         
                     </div>
                     
-                    <div>              
-                        <img src="img/NZzo.gif" alt="" class="skills__img">
+                    <div style="box-shadow: rgba(7, 225, 196, 0.25)0px 50px 100px -20px, rgba(14, 196, 220, 0.3) 0px 30px 60px -30px;">              
+                        <img src="img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
@@ -236,7 +314,8 @@ a:hover{
                             <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
                                 <div class="card-body">
                                     <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #aa069c;"></i><b> Currently</b></h5>
-                                    <p class="card-text">Studying Information Science (ISE) in Nitte Meenakshi Institute of Technology </p>
+                                    <h6 class="card-title" style="background-color: #88079c; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">2020-</h6>
+                                    <p class="card-text">Studying Information Science (ISE) at Nitte Meenakshi Institute of Technology </p>
                                 </div>
                             </div>
                         </div>
@@ -247,11 +326,11 @@ a:hover{
             <section class="skills section " id="about">
                 <h2 class="section-title" id="projects">Projects</h2>
                     
-                <div class="container">
+                <div class="container" style="background-color: #000;">
                     <center><p style="color: #777678; "><b>---Click on the images---</b></p></center>
-                    <div class="team-grid">
-                        <div class="container">
-                            <div class="row people">
+                    <div class="team-grid" style="background-color: #000;">
+                        <div class="container" style="background-color: #000;">
+                            <div class="row people" style="background-color: #000; color: white;">
                                 <div class="col-md-4 col-lg-3 item">
                                     <div class="box" style="background-image:url('img/news.jpg')">
                                         <div class="cover">
@@ -313,9 +392,9 @@ a:hover{
                     </div>
 
 
-                    <div class="team-grid" style="margin-top: -90px;">
+                    <div class="team-grid" style="margin-top: -90px; background-color: #000;">
                         <div class="container">
-                            <div class="row people">
+                            <div class="row people"  style="background-color: #000; color: white;">
                                 
                                 <div class="col-md-4 col-lg-3 item">
                                     <div class="box" style="background-image:url('img/i.png')">
@@ -360,7 +439,7 @@ a:hover{
                     margin-left: 15px;">---Swipe Left---</p>
                       <div class="img1"><img src="img/giphy.gif" alt="" > </div> 
                     </center>
-                    <div class="swiper-wrapper" >
+                    <div class="swiper-wrapper" style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
                       <div class="swiper-slide" ><img src="certificates/meta1.png" alt=""></div>
                       <div class="swiper-slide"><img src="certificates/freecode.png" alt=""></div>
                       <div class="swiper-slide"><img src="certificates/nptel.png" alt=""></div>
@@ -373,11 +452,11 @@ a:hover{
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <center><p style="color: #777678; "><b>---Any Queries, Suggestions---</b></p></center>
-                <div class="contact__container bd-grid">
-                    <form action="/" class="contact__form" method="post">
-                        <input type="text" placeholder="Name" class="contact__input" name="name" required>
-                        <input type="email" placeholder="Email" class="contact__input" name="email" required>
-                        <textarea type="text" id="" cols="0" rows="10" class="contact__input" placeholder="Message" name="message" required></textarea>
+                <div class="contact__container bd-grid" >
+                    <form action="/" class="contact__form" method="post" >
+                        <input type="text" placeholder="Name" class="contact__input" name="name" required style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
+                        <input type="email" placeholder="Email" class="contact__input" name="email" required style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
+                        <textarea type="text" id="" cols="0" rows="10" class="contact__input" placeholder="Message" name="message" required style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;"></textarea>
                         <!-- <input type="button" value="Connect!" class="contact__button button"> -->
                         <button type="submit" class="contact__button nn" style="background-color: var(--first-color);
                         color: #fff;
@@ -404,14 +483,14 @@ a:hover{
         <script src="js/main.js"></script>
         <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
        
        <script>
-//             var loader = document.getElementById('preloader')
-//             $(window).on("load",function(){
-//      $("#preloader").delay(200).fadeOut("slow");
-// });
+            var loader = document.getElementById('preloader')
+            $(window).on("load",function(){
+     $("#preloader").delay(140).fadeOut("slow");
+});
 
 var swiper = new Swiper(".mySwiper", {
         effect: "cards",
