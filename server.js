@@ -5,7 +5,7 @@ const ejs = require('ejs')
 const path = require('path')
 const app = express()
 var port = process.env.PORT
- require('./config/mongo')
+ const db = require('./config/mongo')
 const Message = require('./models/message')
 
 app.set('view engine','ejs')
@@ -40,6 +40,9 @@ app.post('/' ,async(req,res)=>{
         console.log(err)
     }
 })
-app.listen(port || 3000 , ()=>{
-    console.log('listening')
-})
+db
+.then(
+    app.listen(port || 3000 , ()=>{
+        console.log('listening')
+    })
+)
