@@ -1,19 +1,14 @@
 const mongoose = require('mongoose')
 
 const messageSchema = mongoose.Schema({
-    name:{
-        type: String,
-        
-    },
-    email:{
-        type: String,
-        
-       
-    },
-    message:{
-        type: String
+        name: String,
+        email: String,
+        message: String,
+    }, {
+        collection: 'Messages'
     }
-})
 
-const message = mongoose.model('message',messageSchema)
+)
+
+const message = mongoose.model('message', messageSchema)
 module.exports = message
