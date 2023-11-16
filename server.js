@@ -15,8 +15,16 @@ app.use(express.static('assets'))
 
 
 app.get('/' ,async (req,res)=>{
-        const statusm = await status.findOne({id: 1})
-        res.render('index',{thankYouMessage: '' , status: statusm})
+        try{
+            const statusm = await status.findOne({id: 1})
+            res.render('index',{thankYouMessage: '' , status: statusm})
+        console.log(statusm)
+        }
+        catch(Err){
+            console.log(Err)
+            res.redirect('/')
+        }
+        
     
 })
 app.get('/thanks',(req,res)=>{
