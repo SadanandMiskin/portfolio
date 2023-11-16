@@ -5,7 +5,7 @@ const messageSchema = mongoose.Schema({
         email: String,
         message: String,
     }, {
-        collection: 'Messages'
+        collection: 'Messages' 
     }
 
 )

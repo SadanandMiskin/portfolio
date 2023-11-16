@@ -127,7 +127,12 @@ a:hover{
                      <h6 style="margin-top: -40px; color: #848282;" class="wr">
                         <span style="    display: inline-flex;
                         align-items: baseline;">
-                           <p>Right Now, I'm </p> <p id="status" style="padding-left: 5px;"></p>
+                           <p>Online Status:   <p id="status" style="padding-left: 5px;color: rgb(13, 175, 13); font-weight: bold;"><%= status.status %> -</p>  <%= status.file %> </p> 
+                           <!-- <span style="color: rgb(8, 169, 8);"><%= status %></span> -->
+                           <br>
+                           <!-- <p>Working On:  </p> 
+                          
+                           <p id="status" style="padding-left: 5px;"><%= status.file %></p> -->
                         </span>
                      </h6>
                             
@@ -361,7 +366,7 @@ a:hover{
                     
                 </div>
             </section>
-            <section class="contact section" id="certificates" style="margin-top: -80px; margin-bottom: 30px;">
+            <section class="contact section" id="certificates" style="margin-top: -80px; margin-bottom: 90px;">
                 <h2 class="section-title">Certificates</h2>
                 <div class="swiper mySwiper">
                     <center>
@@ -381,8 +386,8 @@ a:hover{
                   </div>
             </section>
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-                <center><p style="color: #777678; "><b>---Any Queries, Suggestions---</b></p></center>
+                <h2 class="section-title">Work with Me</h2>
+               
                 <div class="contact__container bd-grid" >
                     <form action="/" class="contact__form" method="post" >
                         <input type="text" placeholder="Name" class="contact__input" name="name" required style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
@@ -427,37 +432,59 @@ var swiper = new Swiper(".mySwiper", {
         effect: "cards",
         grabCursor: true,
       });
+ 
+    // function update() {
+    //     var statusElement = document.getElementById('status');
+    // var status = statusElement.textContent;
 
-    
-      function updateStatus() {
-            const statusElement = document.getElementById('status');
-            const now = new Date();
-            const currentHour = now.getHours();
+    // if (status === "Writing Code :)") {
+    //     statusElement.style.color = "green";
+    //     statusElement.style.fontWeight = "bold";
 
-            if (currentHour >= 13 && currentHour < 23) {
+    //     // Set 'Updating Server...' after 2.5 seconds
+    //     setTimeout(() => {
+    //         statusElement.innerText = 'Updating Server...';
+    //         // Reset to the original status after 0.5 seconds
+    //         setTimeout(() => {
+    //             statusElement.innerText = 'Writing Code :)';
+    //             statusElement.style.color = "green"; // Reset color
+    //             statusElement.style.fontWeight = "bold"; // Reset font weight
+    //         }, 500);
+    //     }, 2500);
+    // }
+        
+    // }
+    // update()
+    // setInterval(update , 4000)
+    //   function updateStatus() {
+    //         const statusElement = document.getElementById('status');
+    //         const now = new Date();
+    //         const currentHour = now.getHours();
+
+    //         if (currentHour >= 13 && currentHour < 23) {
                 
-                statusElement.style.color = "green"
-                statusElement.style.fontWeight ="bold"
-                setTimeout(() => {
-                    statusElement.innerText = 'Updating...';
-                    setTimeout(() => {
-                        statusElement.innerText = 'Online';
-                    }, 500); 
-                }, 2500); 
-            } else {
-                statusElement.innerText = 'Offline';
-                statusElement.style.color = "red"
-                statusElement.style.fontWeight ="bold"
-                setTimeout(() => {
-                    statusElement.innerText = 'Updating...';
-                    setTimeout(() => {
-                        statusElement.innerText = 'Offline';
-                    }, 500); 
-                }, 2500)
-            }
-        }
-        updateStatus();
-        setInterval(updateStatus, 4000);
+    //             statusElement.style.color = "green"
+    //             statusElement.style.fontWeight ="bold"
+    //             setTimeout(() => {
+    //                 statusElement.innerText = 'Updating...';
+    //                 setTimeout(() => {
+    //                     statusElement.innerText = 'Online';
+    //                 }, 500); 
+    //             }, 2500); 
+    //         } else {
+    //             statusElement.innerText = 'Offline';
+    //             statusElement.style.color = "red"
+    //             statusElement.style.fontWeight ="bold"
+    //             setTimeout(() => {
+    //                 statusElement.innerText = 'Updating...';
+    //                 setTimeout(() => {
+    //                     statusElement.innerText = 'Offline';
+    //                 }, 500); 
+    //             }, 2500)
+    //         }
+    //     }
+    //     updateStatus();
+    //     setInterval(updateStatus, 4000);
       
 
 window.onload = function() {

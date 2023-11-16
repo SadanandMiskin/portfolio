@@ -7,14 +7,16 @@ const app = express()
 var port = process.env.PORT
  const db = require('./config/mongo')
 const Message = require('./models/message')
+const status = require('./models/online')
 
 app.set('view engine','ejs')
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static('assets'))
 
 
-app.get('/' ,(req,res)=>{
-        res.render('index',{thankYouMessage: ''})
+app.get('/' ,async (req,res)=>{
+        const statusm = await status.findOne({id: 1})
+        res.render('index',{thankYouMessage: '' , status: statusm})
     
 })
 app.get('/thanks',(req,res)=>{
