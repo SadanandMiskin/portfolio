@@ -49,9 +49,14 @@ app.post('/' ,async(req,res)=>{
         console.log(err)
     }
 })
-db
-.then(
-    app.listen(port || 3000 , ()=>{
-        console.log('listening')
-    })
-)
+app.listen(3000 || port, async () => { 
+    try{
+        await db
+        .then(
+            console.log('Server is listening')
+        )
+    }
+    catch(err) {
+        console.error(err)
+    }
+})
