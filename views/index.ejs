@@ -1,507 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      />
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Sadanand Miskin</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oxanium:wght@500&display=swap');
+
+
        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Sadanand Miskin</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.png">
-        <style>
+        .hh6 {
+                display: none;
+            }
+        @media (max-width: 450px) {
+            .hh6 {
+                display: flex;
+            }
 
-a{
-text-decoration: none;
-}
-            .row{
-    display: flex;
-    flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  justify-content: center;
-  }
+            .l-main {
+                display: none;
+            }
+
+            .footer {
+
+                position: relative;
+                top: 332px;
+                background-color: #000;
+                color: #a1a1a1;
+                margin-left: 54px;
+                /* margin-left: 106px; */
+                font-size: x-large;
+                /* text-align: center; */
+                /* display: flex; */
+                /* justify-items: center; */
+            }
+
+            .footer__title {
+                display: none;
+            }
+        }
+
+            a {
+                text-decoration: none;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+                justify-content: center;
+            }
 
             .swiper {
-        width: 320px;
-        height: 224px;
-      }
+                width: 320px;
+                height: 224px;
+            }
 
-      .swiper-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        font-size: 22px;
-        font-weight: bold;
-        color: #fff;
-        background-size: auto;
-        border: #000 solid;
-        
-      }
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                font-size: 22px;
+                font-weight: bold;
+                color: #fff;
+                background-size: auto;
+                border: #000 solid;
 
-      .swiper-slide:nth-child(1n) {
-        background-color: rgb(255, 255, 255);
-      }
+            }
 
-      .swiper-slide:nth-child(2n) {
-        background-color: rgb(0, 140, 255);
-      }
+            .swiper-slide:nth-child(1n) {
+                background-color: rgb(255, 255, 255);
+            }
 
-      .swiper-slide:nth-child(3n) {
-        background-color: rgb(10, 184, 111);
-      }
+            .swiper-slide:nth-child(2n) {
+                background-color: rgb(0, 140, 255);
+            }
 
-      .swiper-slide:nth-child(4n) {
-        background-color: rgb(211, 122, 7);
-      }
+            .swiper-slide:nth-child(3n) {
+                background-color: rgb(10, 184, 111);
+            }
 
-      .swiper-slide:nth-child(5n) {
-        background-color: rgb(118, 163, 12);
-      }
+            .swiper-slide:nth-child(4n) {
+                background-color: rgb(211, 122, 7);
+            }
 
-      .swiper-slide:nth-child(6n) {
-        background-color: rgb(180, 10, 47);
-      }
-      .img1 {
-    max-width: 20%;
-    margin-top: -2px;
-    margin-bottom: -18px;
-}
-a:hover{
-    color: rgb(0, 222, 41);
-    text-decoration: none;
-}
+            .swiper-slide:nth-child(5n) {
+                background-color: rgb(118, 163, 12);
+            }
 
-     .card-body{
-        color: white;
-        background-color: #000;
-        box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;
-     }
+            .swiper-slide:nth-child(6n) {
+                background-color: rgb(180, 10, 47);
+            }
 
-     .col-md-4 {
-        box-shadow: rgba(7, 196, 225, 0.25)0px 50px 100px -20px, rgba(14, 172, 220, 0.3) 0px 30px 60px -30px;
-     }
+            .img1 {
+                max-width: 20%;
+                margin-top: -2px;
+                margin-bottom: -18px;
+            }
+
+            a:hover {
+                color: rgb(0, 222, 41);
+                text-decoration: none;
+            }
+
+            .card-body {
+                color: white;
+                background-color: #000;
+                box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;
+            }
+
+
+
+            .triangle-container {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                animation: rotate 2s linear infinite;
+                /* Adjust the duration and timing function as needed */
+            }
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 49px solid rgb(0, 187, 255);
+                /* You can change the color */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+
+                to {
+                    transform: translate(-50%, -50%) rotate(360deg);
+                }
+            }
     </style>
-        </style>
-    </head>
-    <body style="background-color: #000;">
+    </style>
+</head>
 
-        <header class="l-header" style="background-color: #000; color: white;">
-            <nav class="nav bd-grid" >
-                <div>
-                    <a href="/" class="nav__logo" style="color: #00a2f3;">Sadanand Miskin</a>
-                </div>
+<body style="background-color: #000;">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#edu" class="nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+    <header class="l-header" style="background-color: #000; color: white;  font-family: 'DM Sans', sans-serif;">
+        <nav class="nav bd-grid">
+            <div style="left: 44%;
+            position: relative;
+            
+            ">
+                <a href="/" class="nav__logo" style="color: #00a2f3; font-family: 'Dancing Script', cursive; font-size: larger; display: inline-block;
+                 transform: translateY(50deg) rotate(5deg);">Sadanand Miskin</a>
+            </div>
+        </nav>
+    </header>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header> 
+    <main class="l-main">
 
-        <main class="l-main">
-          
-            <section class="home bd-grid" id="home">
-               
-                <div class="home__data">
-                 
-                    <h6 class="home__title"></h6>
-                    <h1 class="home__title" style=""><span style="color: #707070;">Hi, I'm</span><br> <span class="home__title-color" style=" color: #c200f39a;"><b>Sadanand Miskin,</b></span></h1><br>  
-                     <h6 style="margin-top: -40px; color: #848282;" class="wr">
-                        <span style="    display: inline-flex;
+        <section class="home bd-grid" id="home">
+
+
+            <div class="home__data">
+
+
+                <h1 class="home__title"><span style="color: #707070;">Hi, I'm</span><br> <span class="home__title-color"
+                        style=" color: #e3f300c5; width: 100%; font-size: 19vh; font-family: 'Orbitron', sans-serif; display: flex; "><b>Sadanand
+                            Miskin</b>
+                        <div class="triangle-container">
+                            <div class="triangle"></div>
+                        </div>
+
+                    </span></h1><br>
+                <h6 style="margin-top: -40px; color: #848282;" class="wr">
+                    <span style="    display: inline-flex;
                         align-items: baseline;">
-                           <p>Online Status:   <p id="status" style="padding-left: 5px;color: rgb(13, 175, 13); font-weight: bold;"><%= status.status %> -</p>  <%= status.file %> </p> 
-                           <!-- <span style="color: rgb(8, 169, 8);"><%= status %></span> -->
-                           <br>
-                           <!-- <p>Working On:  </p> 
+                        <p>Live Status: <p id="status"
+                                style="padding-left: 5px;color: rgb(13, 175, 13); font-weight: bold;">
+                                <%= status.status %> -</p> <%= status.file %> </p>
+                        <!-- <span style="color: rgb(8, 169, 8);"><%= status %></span> -->
+                        <br>
+                        <!-- <p>Working On:  </p> 
                           
                            <p id="status" style="padding-left: 5px;"><%= status.file %></p> -->
-                        </span>
-                     </h6>
-                            
-                    <a href="resume/Sadanand-Miskin.pdf" class="button bbb" style="margin-top: 20px; text-decoration:none; " download>Download CV <i class="fa-solid fa-angles-down" style="color: #ffffff;"></i></a><br>
-                    <p class="hh6" style="color: #a1a1a1; margin-top: 40px;
-                    margin-bottom: 1rem;
-                    margin-left: 15px;"></p>
-                </div>
-                <div class="home__img" style="overflow: visible;">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: visible; margin-bottom: 50px">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 29.4423H368.19024V388.4423H9.19024V29.4423Z" />
-                        </mask>
-                        <g mask="" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
-                            <path d="M105.19024 75.964H400.19024V400.964H105.19024V75.964Z" class="anim-box" style="overflow: visible;"/>
-                            <image class="home__blob-img" x="30" y="0" href="img/profile.png"/>
-                            
-                        </g>
-                    </svg>
-                    
-                </div>
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/sadanand-miskin-a1414a1a4/" class="home__social-icon" ><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"  target="_blank"></i></a>
-            <a href="https://github.com/SadanandMiskin" class="home__social-icon"><i class="fa-brands fa-github" style="color: #ffffff;" target="_blank"></i></a>
+                    </span>
+                </h6>
+
+
+                <a href="resume/Sadanand-Miskin.pdf" class="button"
+                    style="margin-top: 20px; text-decoration:none; background-color: #1d559d; box-shadow: rgb(235, 215, 33) 0px 8px 100px 0px;"
+                    download>Download CV <i class="fa-solid fa-angles-down" style="color: #ffffff; "></i></a><br>
+
+                <div class="triangle-container" style="display: flex; left: 90%; bottom: 30%;">
+                    <div class="triangle"></div>
                 </div>
 
-                
-            </section>
 
-          
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+            </div>
 
-                <div class="about__container bd-grid" >
-                    <div class="about__img">
-                        <img src="img/favicon.png" alt="" style="box-shadow: rgba(225, 120, 7, 0.25)0px 50px 100px -20px, rgba(220, 217, 14, 0.3) 0px 30px 60px -30px; padding: 30px;">
+
+        </section>
+
+
+        <section class="about section " id="about" style="font-family: 'DM Sans', sans-serif;">
+            <h2 class="section-title" style="color: #00a2f3; font-family: 'Oxanium', sans-serif;">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="img/pp.jpg" alt=""
+                        style="box-shadow: rgba(225, 120, 7, 0.25)0px 50px 100px -20px, rgba(220, 217, 14, 0.3) 0px 30px 60px -30px; ">
+                </div>
+
+                <div
+                    style="box-shadow: rgba(7, 225, 225, 0.25)0px 50px 100px -20px, rgba(14, 199, 220, 0.3) 0px 30px 60px -30px; padding: 30px; padding: 20px;">
+                    <h2 class="about__subtitle" style="color: white; ">I'm <span
+                            style="color: #00f3e3; font-family: 'Orbitron', sans-serif;">Sadanand
+                            Miskin</span></h2>
+                    <p class="about__text" style="color: white;">I make websites. I'm good with things like HTML, CSS,
+                        and JavaScript, which make sites look and work well. I also know how to make the
+                        behind-the-scenes stuff work using Node.js, Express, and MongoDB. Check out my portfolio to see
+                        all the cool websites I've made!</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="skills section" id="skills" style="color: white; font-family: 'DM Sans', sans-serif;">
+            <h2 class="section-title" style="font-family: 'Oxanium', sans-serif; color: #00a2f3;">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div
+                    style="box-shadow: rgba(134, 7, 225, 0.25)0px 50px 100px -20px, rgba(127, 14, 220, 0.3) 0px 30px 60px -30px; padding: 30px;">
+                    <h2 class="skills__subtitle" style="color: rgb(255, 0, 225);">Professional Skills</h2>
+                    <p class="skills__text">I have a good hold on HTML,CSS and JavaScript for building Interactive
+                        websites. </p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+
                     </div>
-                    
-                    <div style="box-shadow: rgba(7, 225, 225, 0.25)0px 50px 100px -20px, rgba(14, 199, 220, 0.3) 0px 30px 60px -30px; padding: 30px; padding: 20px;">
-                        <h2 class="about__subtitle" style="color: white;">I'm <span style="color: #8a00f3;">Sadanand Miskin</span></h2>
-                        <p class="about__text" style="color: white;">I make websites. I'm good with things like HTML, CSS, and JavaScript, which make sites look and work well. I also know how to make the behind-the-scenes stuff work using Node.js, Express, and MongoDB. Check out my portfolio to see all the cool websites I've made!</p>           
-                    </div>                                   
-                </div>
-            </section>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
 
-       
-            <section class="skills section" id="skills" style="color: white;">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid" >          
-                    <div style="box-shadow: rgba(134, 7, 225, 0.25)0px 50px 100px -20px, rgba(127, 14, 220, 0.3) 0px 30px 60px -30px; padding: 30px;" >
-                        <h2 class="skills__subtitle" style="color: rgb(255, 0, 225);">Professional Skills</h2>
-                        <p class="skills__text">I have a good hold on HTML,CSS and JavaScript for building Interactive websites. </p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                   
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                           
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">NodeJS</span>
-                            </div>
-                          
-                        </div>
-                        
                     </div>
-                    
-                    <div style="box-shadow: rgba(7, 225, 196, 0.25)0px 50px 100px -20px, rgba(14, 196, 220, 0.3) 0px 30px 60px -30px;">              
-                        <img src="img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
 
-            <section id="education" class="py-5">
-                <div class="container">
-                    <h2 class="section-title" id="edu">Education</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-4"  style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #940388;"></i><b> Schooling</b></h5>
-                                    <h6 class="card-title" style="background-color: #910591; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">2018</h6>
-                                    <p class="card-text edu1">Completed my 10th from SRN Mehta School</p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">NodeJS</span>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #c108b1;"></i><b> Higher School</b></h5>
-                                    <h6 class="card-title" style="background-color: #88079c; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">2020</h6>
-                                    <p class="card-text">Completed my 12th from Gurukul Independent PU College of Science</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #aa069c;"></i><b> Currently</b></h5>
-                                    <h6 class="card-title" style="background-color: #88079c; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">2020-</h6>
-                                    <p class="card-text">Studying Information Science (ISE) at Nitte Meenakshi Institute of Technology </p>
-                                </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    style="box-shadow: rgba(7, 225, 196, 0.25)0px 50px 100px -20px, rgba(14, 196, 220, 0.3) 0px 30px 60px -30px;">
+                    <img src="img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-5" style="font-family: 'DM Sans', sans-serif;">
+            <div class="container">
+                <h2 class="section-title" id="edu" style="font-family: 'Oxanium', sans-serif; color: #00a2f3;">Education
+                </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #940388;"></i><b>
+                                        Schooling</b></h5>
+                                <h6 class="card-title"
+                                    style="background-color: #910591; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">
+                                    2018</h6>
+                                <p class="card-text edu1">Completed my 10th from SRN Mehta School</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="skills section " id="about">
-                <h2 class="section-title" id="projects">Projects</h2>
-                    
-                <div class="container" style="background-color: #000;">
-                    <center><p style="color: #777678; "><b>---Click on the images---</b></p></center>
-                    <div class="team-grid" style="background-color: #000;">
-                        <div class="container" style="background-color: #000;">
-                            <div class="row people" style="background-color: #000; color: white;">
-                                <div class="col-md-4 col-lg-3 item">
-                                    <div class="box" style="background-image:url('img/news.jpg')">
-                                        <div class="cover">
-                                            <h3 class="name" >News API</h3>
-                                            <p class="title">Fetches news from various news providers and showcase articles as in JSON format for API.</p>
-                                            <div class="social">
-                                                <a href="
-                                                https://clear-bull-flannel-nightgown.cyclic.app" target="_blank"><button style="background-color: white;" target="_blank">Live link</button></a>
-                                             <a href="https://github.com/SadanandMiskin/NewsAPI" target="_blank"><button style="background-color: white; "  target="_blank">Github</button></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <h4 style="margin-left: 60px;">News API</h4>
-                                </div>
-                                
-                                <div class="col-md-4 col-lg-3 item">
-                                    <div class="box" style="background-image:url('img/new.png')">
-                                        <div class="cover">
-                                            <h3 class="name" >Khabar-Roz-Dar</h3>
-                                            <p class="title">A news website based on the newsAPI used.</p>
-                                            <div class="social">
-                                                <a href="https://newswebsite-hzyl.onrender.com" target="_blank"><button style="background-color: white;" >Live link</button></a>
-                                             <a href="https://github.com/SadanandMiskin/Khabar-Roz-Dar/tree/master"  target="_blank"><button style="background-color: white; " >Github</button></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <h4 style="margin-left: 60px;">Khabar-roz-Daar</h4>
-                                </div>
-                                <div class="col-md-4 col-lg-3 item">
-                                    <div class="box" style="background-image:url('img/beauty.jpg')">
-                                        <div class="cover">
-                                            <h3 class="name" >Kum-Kum</h3>
-                                            <p class="title"><b style="color: coral;">(Under Development)</b> <br> A beauty Parlour website, which takes pre booking of various services provided. Also sends confirmation mail with Admin page included.</p>
-                                            <div class="social">
-                                                <a href="https://drab-underclothes-bear.cyclic.app/" target="_blank"><button style="background-color: white;" target="_blank">Live link</button></a>
-                                             <a href="https://github.com/SadanandMiskin/kum-kum" target="_blank"><button style="background-color: white; " target="_blank" >Github</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h4 style="margin-left: 60px;">Kum-Kum Beauty Parlour</h4>
-                                </div>
-                                <div class="col-md-4 col-lg-3 item">
-                                    <div class="box" style="background-image:url('img/wea.avif')">
-                                        <div class="cover">
-                                            <h3 class="name" >Weather API</h3>
-                                            <p class="title"><b style="color: coral;">Fetches weather Information from User input and displays it.</p>
-                                            <div class="social">
-                                                <a href="https://weather-nsnj.onrender.com/" target="_blank"><button style="background-color: white;" target="_blank" >Live link</button></a>
-                                             <a href="https://github.com/SadanandMiskin/weatherapi" target="_blank"><button style="background-color: white; " target="_blank" >Github</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h4 style="margin-left: 60px;">WeatherAPI</h4>
-                                </div>
-                                
+                    <div class="col-md-4">
+                        <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #c108b1;"></i><b>
+                                        Higher School</b></h5>
+                                <h6 class="card-title"
+                                    style="background-color: #88079c; color: #fff; border-radius: 5px; max-width: 50px; padding: 4px;">
+                                    2020</h6>
+                                <p class="card-text">Completed my 12th from Gurukul Independent PU College of Science
+                                </p>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="team-grid" style="margin-top: -90px; background-color: #000;">
-                        <div class="container">
-                            <div class="row people"  style="background-color: #000; color: white;">
-                                
-                                <div class="col-md-4 col-lg-3 item">
-                                    <div class="box" style="background-image:url('img/i.png')">
-                                        <div class="cover">
-                                            <h3 class="name" >Event Page</h3>
-                                            <p class="title"><b style="color: coral;">An Event Landing page.</p>
-                                            <div class="social">
-                                                <a href="https://samdd1.github.io/" target="_blank"><button style="background-color: white;" target="_blank">Live link</button></a>
-                                             <a href="https://github.com/samdd1/samdd1.github.io/" target="_blank"><button style="background-color: white; "  target="_blank">Github</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h4 style="margin-left: 60px;">EventSee</h4>
-                                </div>
-                                
-
-
-                                <div class="col-md-4 col-lg-3 item" style="min-width: 270px; border-radius: 300px;">
-                                    <div class="box" style="background-image:url('img/working.gif')">
-                                        <div class="cover">
-                                            <h3 class="name" >-------</h3>
-                                            <p class="title"><b style="color: coral;">Currenty working on projects</p>
-                                                
-                                           
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                
+                    <div class="col-md-4">
+                        <div class="card mb-4" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-book-open" style="color: #aa069c;"></i><b>
+                                        Currently</b></h5>
+                                <h6 class="card-title"
+                                    style="background-color: #88079c; color: #fff; border-radius: 5px; max-width: 130px; padding: 4px;">
+                                    2020 - current</h6>
+                                <p class="card-text">Studying Information Science (ISE) at Nitte Meenakshi Institute of
+                                    Technology </p>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-            </section>
-            <section class="contact section" id="certificates" style="margin-top: -80px; margin-bottom: 90px;">
-                <h2 class="section-title">Certificates</h2>
-                <div class="swiper mySwiper">
-                    <center>
-                        <p class="" style="color: #707070; margin-top: 40px;
+            </div>
+        </section>
+
+        <section class="skills section " id="about" style="font-family: 'DM Sans', sans-serif;">
+            <h2 class="section-title" id="projects" style="font-family: 'Oxanium', sans-serif; color: #00a2f3;">Projects
+            </h2>
+
+            <div class="container" style="background-color: #000;">
+                <center>
+                    <p style="color: #777678; "><b>---Click on the images---</b></p>
+                </center>
+                <div class="team-grid" style="background-color: #000;">
+                    <div class="container" style="background-color: #000;">
+                        <div class="row people" style="background-color: #000; color: white;">
+                            <div class="col-md-4 col-lg-3 item">
+                                <div class="box" style="background-image:url('img/news.jpg')">
+                                    <div class="cover">
+                                        <h3 class="name">News API</h3>
+                                        <p class="title">Fetches news from various news providers and showcase articles
+                                            as in JSON format for API.</p>
+                                        <div class="social">
+                                            <a href="
+                                                https://clear-bull-flannel-nightgown.cyclic.app"
+                                                target="_blank"><button style="background-color: white;"
+                                                    target="_blank">Live link</button></a>
+                                            <a href="https://github.com/SadanandMiskin/NewsAPI" target="_blank"><button
+                                                    style="background-color: white; "
+                                                    target="_blank">Github</button></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <h4 style="margin-left: 60px;">News API</h4>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 item">
+                                <div class="box" style="background-image:url('img/new.png')">
+                                    <div class="cover">
+                                        <h3 class="name">Khabar-Roz-Dar</h3>
+                                        <p class="title">A news website based on the newsAPI used.</p>
+                                        <div class="social">
+                                            <a href="https://newswebsite-hzyl.onrender.com" target="_blank"><button
+                                                    style="background-color: white;">Live link</button></a>
+                                            <a href="https://github.com/SadanandMiskin/Khabar-Roz-Dar/tree/master"
+                                                target="_blank"><button
+                                                    style="background-color: white; ">Github</button></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <h4 style="margin-left: 60px;">Khabar-roz-Daar</h4>
+                            </div>
+                            <div class="col-md-4 col-lg-3 item">
+                                <div class="box" style="background-image:url('img/beauty.jpg')">
+                                    <div class="cover">
+                                        <h3 class="name">Kum-Kum</h3>
+                                        <p class="title"><b style="color: coral;">(Under Development)</b> <br> A beauty
+                                            Parlour website, which takes pre booking of various services provided. Also
+                                            sends confirmation mail with Admin page included.</p>
+                                        <div class="social">
+                                            <a href="https://drab-underclothes-bear.cyclic.app/" target="_blank"><button
+                                                    style="background-color: white;" target="_blank">Live
+                                                    link</button></a>
+                                            <a href="https://github.com/SadanandMiskin/kum-kum" target="_blank"><button
+                                                    style="background-color: white; "
+                                                    target="_blank">Github</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 style="margin-left: 60px;">Kum-Kum Beauty Parlour</h4>
+                            </div>
+                            <div class="col-md-4 col-lg-3 item">
+                                <div class="box" style="background-image:url('img/wea.avif')">
+                                    <div class="cover">
+                                        <h3 class="name">Weather API</h3>
+                                        <p class="title"><b style="color: coral;">Fetches weather Information from User
+                                                input and displays it.</p>
+                                        <div class="social">
+                                            <a href="https://weather-nsnj.onrender.com/" target="_blank"><button
+                                                    style="background-color: white;" target="_blank">Live
+                                                    link</button></a>
+                                            <a href="https://github.com/SadanandMiskin/weatherapi"
+                                                target="_blank"><button style="background-color: white; "
+                                                    target="_blank">Github</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 style="margin-left: 60px;">WeatherAPI</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="team-grid" style="margin-top: -90px; background-color: #000;">
+                    <div class="container">
+                        <div class="row people" style="background-color: #000; color: white;">
+
+                            <div class="col-md-4 col-lg-3 item">
+                                <div class="box" style="background-image:url('img/i.png')">
+                                    <div class="cover">
+                                        <h3 class="name">Event Page</h3>
+                                        <p class="title"><b style="color: coral;">An Event Landing page.</p>
+                                        <div class="social">
+                                            <a href="https://samdd1.github.io/" target="_blank"><button
+                                                    style="background-color: white;" target="_blank">Live
+                                                    link</button></a>
+                                            <a href="https://github.com/samdd1/samdd1.github.io/"
+                                                target="_blank"><button style="background-color: white; "
+                                                    target="_blank">Github</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 style="margin-left: 60px;">EventSee</h4>
+                            </div>
+
+
+
+                            <div class="col-md-4 col-lg-3 item" style="min-width: 270px; border-radius: 300px;">
+                                <div class="box" style="background-image:url('img/working.gif')">
+                                    <div class="cover">
+                                        <h3 class="name">-------</h3>
+                                        <p class="title"><b style="color: coral;">Redesigning Projects</p>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+        <section class="contact section" id="certificates"
+            style="margin-top: -80px; margin-bottom: 90px; font-family: 'DM Sans', sans-serif;">
+            <h2 class="section-title" style="font-family: 'Oxanium', sans-serif;">Certificates</h2>
+            <div class="swiper mySwiper">
+                <center>
+                    <p class="" style="color: #707070; margin-top: 40px;
                     margin-bottom: .5rem;
                     margin-left: 15px;">---Swipe Left---</p>
-                      <div class="img1"><img src="img/giphy.gif" alt="" > </div> 
-                    </center>
-                    <div class="swiper-wrapper" style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
-                      <div class="swiper-slide" ><img src="certificates/meta1.png" alt=""></div>
-                      <div class="swiper-slide"><img src="certificates/freecode.png" alt=""></div>
-                      <div class="swiper-slide"><img src="certificates/nptel.png" alt=""></div>
-                      <div class="swiper-slide"><img src="certificates/meta2.png" alt=""></div>
-                      <div class="swiper-slide"><img src="certificates/flipkart.png" alt=""></div>
-                      <div class="swiper-slide"><img src="certificates/hackerrank.png" alt=""></div>
-                    </div>
-                  </div>
-            </section>
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Work with Me</h2>
-               
-                <div class="contact__container bd-grid" >
-                    <form action="/" class="contact__form" method="post" >
-                        <input type="text" placeholder="Name" class="contact__input" name="name" required style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
-                        <input type="email" placeholder="Email" class="contact__input" name="email" required style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
-                        <textarea type="text" id="" cols="0" rows="10" class="contact__input" placeholder="Message" name="message" required style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;"></textarea>
-                        <!-- <input type="button" value="Connect!" class="contact__button button"> -->
-                        <button type="submit" class="contact__button nn" style="background-color: var(--first-color);
+                    <div class="img1"><img src="img/giphy.gif" alt=""> </div>
+                </center>
+                <div class="swiper-wrapper"
+                    style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
+                    <div class="swiper-slide"><img src="certificates/meta1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="certificates/freecode.png" alt=""></div>
+                    <div class="swiper-slide"><img src="certificates/nptel.png" alt=""></div>
+                    <div class="swiper-slide"><img src="certificates/meta2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="certificates/flipkart.png" alt=""></div>
+                    <div class="swiper-slide"><img src="certificates/hackerrank.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact" style="font-family: 'DM Sans', sans-serif;">
+            <h2 class="section-title" style="font-family: 'Oxanium', sans-serif;">Work with Me</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="/" class="contact__form" method="post">
+                    <input type="text" placeholder="Name" class="contact__input" name="name" required
+                        style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
+                    <input type="email" placeholder="Email" class="contact__input" name="email" required
+                        style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;">
+                    <textarea type="text" id="" cols="0" rows="10" class="contact__input" placeholder="Message"
+                        name="message" required
+                        style="box-shadow: rgba(225, 7, 185, 0.25)0px 50px 100px -20px, rgba(220, 14, 217, 0.3) 0px 30px 60px -30px;"></textarea>
+                    <!-- <input type="button" value="Connect!" class="contact__button button"> -->
+                    <button type="submit" class="contact__button nn" style="background-color: var(--first-color);
                         color: #fff;
                         padding: .75rem 2.5rem;
                         font-weight: var(--font-semi);
                         border-radius: .5rem;
                         transition: .3s;">Send!</button>
-                    </form>
-                </div>
-            </section>
-        </main>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    
-        <footer class="footer">
-            <p class="footer__title">Sadanand</p>
-            <a href="https://www.linkedin.com/in/sadanand-miskin-a1414a1a4/" class="home__social-icon" style="padding: 20px;"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"  target="_blank"></i></a>
-            <a href="https://github.com/SadanandMiskin" class="home__social-icon"><i class="fa-brands fa-github" style="color: #ffffff;" target="_blank"></i></a>
-            
-        </footer>
-        
-        <script src="https://kit.fontawesome.com/a92e035de8.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="js/main.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <footer class="footer">
+        <p class="footer__title">Sadanand</p>
+        <p class="hh6" style="color: #a1a1a1; margin-top: 40px;
+                    margin-bottom: 1rem;
+                    margin-left: 15px;">Only Desktop Supported :(</p>
+        <a href="https://www.linkedin.com/in/sadanand-miskin-a1414a1a4/" class="home__social-icon"
+            style="padding: 20px;"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;" target="_blank"></i></a>
+        <a href="https://github.com/SadanandMiskin" class="home__social-icon"><i class="fa-brands fa-github"
+                style="color: #ffffff;" target="_blank"></i></a>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a92e035de8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-       
-       <script>
-            var loader = document.getElementById('preloader')
-            $(window).on("load",function(){
-     $("#preloader").delay(140).fadeOut("slow");
-});
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
 
-var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-      });
- 
-    // function update() {
-    //     var statusElement = document.getElementById('status');
-    // var status = statusElement.textContent;
+        // function update() {
+        //     var statusElement = document.getElementById('status');
+        // var status = statusElement.textContent;
 
-    // if (status === "Writing Code :)") {
-    //     statusElement.style.color = "green";
-    //     statusElement.style.fontWeight = "bold";
+        // if (status === "Writing Code :)") {
+        //     statusElement.style.color = "green";
+        //     statusElement.style.fontWeight = "bold";
 
-    //     // Set 'Updating Server...' after 2.5 seconds
-    //     setTimeout(() => {
-    //         statusElement.innerText = 'Updating Server...';
-    //         // Reset to the original status after 0.5 seconds
-    //         setTimeout(() => {
-    //             statusElement.innerText = 'Writing Code :)';
-    //             statusElement.style.color = "green"; // Reset color
-    //             statusElement.style.fontWeight = "bold"; // Reset font weight
-    //         }, 500);
-    //     }, 2500);
-    // }
-        
-    // }
-    // update()
-    // setInterval(update , 4000)
-    //   function updateStatus() {
-    //         const statusElement = document.getElementById('status');
-    //         const now = new Date();
-    //         const currentHour = now.getHours();
+        //     // Set 'Updating Server...' after 2.5 seconds
+        //     setTimeout(() => {
+        //         statusElement.innerText = 'Updating Server...';
+        //         // Reset to the original status after 0.5 seconds
+        //         setTimeout(() => {
+        //             statusElement.innerText = 'Writing Code :)';
+        //             statusElement.style.color = "green"; // Reset color
+        //             statusElement.style.fontWeight = "bold"; // Reset font weight
+        //         }, 500);
+        //     }, 2500);
+        // }
 
-    //         if (currentHour >= 13 && currentHour < 23) {
-                
-    //             statusElement.style.color = "green"
-    //             statusElement.style.fontWeight ="bold"
-    //             setTimeout(() => {
-    //                 statusElement.innerText = 'Updating...';
-    //                 setTimeout(() => {
-    //                     statusElement.innerText = 'Online';
-    //                 }, 500); 
-    //             }, 2500); 
-    //         } else {
-    //             statusElement.innerText = 'Offline';
-    //             statusElement.style.color = "red"
-    //             statusElement.style.fontWeight ="bold"
-    //             setTimeout(() => {
-    //                 statusElement.innerText = 'Updating...';
-    //                 setTimeout(() => {
-    //                     statusElement.innerText = 'Offline';
-    //                 }, 500); 
-    //             }, 2500)
-    //         }
-    //     }
-    //     updateStatus();
-    //     setInterval(updateStatus, 4000);
-      
+        // }
+        // update()
+        // setInterval(update , 4000)
+        //   function updateStatus() {
+        //         const statusElement = document.getElementById('status');
+        //         const now = new Date();
+        //         const currentHour = now.getHours();
 
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-        </script>
-    </body>
+        //         if (currentHour >= 13 && currentHour < 23) {
+
+        //             statusElement.style.color = "green"
+        //             statusElement.style.fontWeight ="bold"
+        //             setTimeout(() => {
+        //                 statusElement.innerText = 'Updating...';
+        //                 setTimeout(() => {
+        //                     statusElement.innerText = 'Online';
+        //                 }, 500); 
+        //             }, 2500); 
+        //         } else {
+        //             statusElement.innerText = 'Offline';
+        //             statusElement.style.color = "red"
+        //             statusElement.style.fontWeight ="bold"
+        //             setTimeout(() => {
+        //                 statusElement.innerText = 'Updating...';
+        //                 setTimeout(() => {
+        //                     statusElement.innerText = 'Offline';
+        //                 }, 500); 
+        //             }, 2500)
+        //         }
+        //     }
+        //     updateStatus();
+        //     setInterval(updateStatus, 4000);
+
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+            document.body.appendChild(css);
+        };
+    </script>
+</body>
+
 </html>

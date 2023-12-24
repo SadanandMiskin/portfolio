@@ -18,7 +18,6 @@ app.get('/' ,async (req,res)=>{
         try{
             const statusm = await status.findOne({id: 1})
             res.render('index',{thankYouMessage: '' , status: statusm})
-        console.log(statusm)
         }
         catch(Err){
             console.log(Err)
