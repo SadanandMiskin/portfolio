@@ -24,32 +24,27 @@
         .hh6 {
                 display: none;
             }
-        @media (max-width: 450px) {
-            .hh6 {
+        @media (max-width: 576px) {
+            /* .hh6 {
                 display: flex;
             }
 
             .l-main {
                 display: none;
+            } */
+            .ttt{
+                
+                color: #e3f300c5;
+    width: 100%;
+    font-size: 6vh;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+            
             }
+          .triangle-container{
+            display: none;
+          }
 
-            .footer {
-
-                position: relative;
-                top: 332px;
-                background-color: #000;
-                color: #a1a1a1;
-                margin-left: 54px;
-                /* margin-left: 106px; */
-                font-size: x-large;
-                /* text-align: center; */
-                /* display: flex; */
-                /* justify-items: center; */
-            }
-
-            .footer__title {
-                display: none;
-            }
         }
 
             a {
@@ -136,9 +131,9 @@
             .triangle {
                 width: 0;
                 height: 0;
-                border-left: 30px solid transparent;
-                border-right: 30px solid transparent;
-                border-bottom: 49px solid rgb(0, 187, 255);
+                border-left: 13px solid transparent;
+                border-right: 13px solid transparent;
+                border-bottom: 24px solid rgb(0, 187, 255);
                 /* You can change the color */
                 position: absolute;
                 top: 50%;
@@ -182,9 +177,9 @@
 
 
                 <h1 class="home__title"><span style="color: #707070;">Hi, I'm</span><br> <span class="home__title-color"
-                        style=" color: #e3f300c5; width: 100%; font-size: 19vh; font-family: 'Orbitron', sans-serif; display: flex; "><b>Sadanand
+                        style=" color: #e3f300c5; width: 100%; font-size: 19vh; font-family: 'Orbitron', sans-serif; display: flex; "><b class="ttt">Sadanand
                             Miskin</b>
-                        <div class="triangle-container">
+                        <div class="triangle-container" >
                             <div class="triangle"></div>
                         </div>
 
@@ -193,7 +188,7 @@
                     <span style="    display: inline-flex;
                         align-items: baseline;">
 
-                        <p>>>>> Live Status: <p id="status"
+                        <p>>> Live Status: <p id="status"
                                 style="padding-left: 5px;color: rgb(13, 175, 13); font-weight: bold;">
                                 <%= status.status %> -</p> <%= status.file %> </p>
                         <!-- <span style="color: rgb(8, 169, 8);"><%= status %></span> -->
@@ -215,17 +210,16 @@
                     style="margin-top: 20px; text-decoration:none; background-color: #1d559d; box-shadow: rgb(235, 215, 33) 0px 8px 100px 0px;"
                     download>Download CV <i class="fa-solid fa-angles-down" style="color: #ffffff; "></i></a><br>
 
-                <div class="triangle-container" style="display: flex; left: 90%; bottom: 30%;">
+                <div class="triangle-container" style="display: flex; left: 71%; bottom: 30%;">
                     <div class="triangle"></div>
                 </div>
 
 
             </div>
-
-
+            
         </section>
-
-
+        
+       
         <section class="about section " id="about" style="font-family: 'DM Sans', sans-serif;">
             <h2 class="section-title" style="color: #00a2f3; font-family: 'Oxanium', sans-serif;">About</h2>
 
