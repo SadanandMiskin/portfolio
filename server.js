@@ -49,14 +49,7 @@ app.post('/' ,async(req,res)=>{
         console.log(err)
     }
 })
+db()
 app.listen(3000 || port, async () => { 
-    try{
-        await db
-        .then(
-            console.log('Server is listening')
-        )
-    }
-    catch(err) {
-        console.error(err)
-    }
+    console.log('server listening')
 })
